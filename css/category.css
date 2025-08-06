@@ -1,0 +1,112 @@
+/* Category Page Styles */
+.category-hero {
+    background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(0, 119, 182, 0.8)), url('https://via.placeholder.com/1920x600?text=Electronics') no-repeat center center/cover;
+    color: var(--white);
+    padding: 100px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.category-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.category-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.category-products {
+    padding: 40px 0;
+}
+
+.category-products h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.category-products h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+/* Filter Section */
+.filter-section {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.filter-section label {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.filter-section select,
+.filter-section input {
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: var(--white);
+    color: var(--text-color);
+}
+
+.filter-section button {
+    padding: 8px 20px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-section button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .category-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .filter-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .category-hero p {
+        font-size: 1rem;
+    }
+    
+    .category-products h2 {
+        font-size: 1.5rem;
+    }
+}
