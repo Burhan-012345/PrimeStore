@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Checkout - PrimeShop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="assets/prime.png" alt="PrimeShop Logo" class="main-logo">
+                <div class="user-actions">
+                    <div class="user-logo" id="userLogo">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Payment Banner -->
+    <section class="payment-banner">
+        <div class="container">
+            <h1>Secure Checkout</h1>
+            <p>Complete your purchase with confidence</p>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="payment-section">
+        <div class="container">
+            <div class="payment-container">
+                <!-- Payment Methods -->
+                <div class="payment-methods">
+                    <h2>Payment Methods</h2>
+                    
+                    <div class="payment-options">
+                        <div class="payment-tabs">
+                            <button class="payment-tab active" data-tab="credit-card">
+                                <i class="far fa-credit-card"></i> Credit/Debit Card
+                            </button>
+                            <button class="payment-tab" data-tab="paypal">
+                                <i class="fab fa-paypal"></i> PayPal
+                            </button>
+                            <button class="payment-tab" data-tab="upi">
+                                <i class="fas fa-mobile-alt"></i> UPI
+                            </button>
+                            <button class="payment-tab" data-tab="netbanking">
+                                <i class="fas fa-university"></i> Net Banking
+                            </button>
+                        </div>
+                        
+                        <div class="payment-content">
+                            <!-- Credit Card Form -->
+                            <div id="credit-card" class="tab-content active">
+                                <form id="creditCardForm" class="payment-form">
+                                    <div class="form-group">
+                                        <label for="card-number">Card Number</label>
+                                        <div class="input-with-icon">
+                                            <i class="far fa-credit-card"></i>
+                                            <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="card-name">Name on Card</label>
+                                        <div class="input-with-icon">
+                                            <i class="far fa-user"></i>
+                                            <input type="text" id="card-name" placeholder="John Doe" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="expiry-date">Expiry Date</label>
+                                            <div class="input-with-icon">
+                                                <i class="far fa-calendar-alt"></i>
+                                                <input type="text" id="expiry-date" placeholder="MM/YY" required>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="cvv">CVV</label>
+                                            <div class="input-with-icon">
+                                                <i class="fas fa-lock"></i>
+                                                <input type="text" id="cvv" placeholder="123" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group checkbox">
+                                        <input type="checkbox" id="save-card" checked>
+                                        <label for="save-card">Save card for future payments</label>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-pay-now">Pay Now</button>
+                                </form>
+                                
+                                <div class="accepted-cards">
+                                    <p>We accept:</p>
+                                    <div class="card-icons">
+                                        <i class="fab fa-cc-visa"></i>
+                                        <i class="fab fa-cc-mastercard"></i>
+                                        <i class="fab fa-cc-amex"></i>
+                                        <i class="fab fa-cc-discover"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- PayPal Form -->
+                            <div id="paypal" class="tab-content">
+                                <div class="paypal-content">
+                                    <p>You will be redirected to PayPal to complete your payment securely.</p>
+                                    <button id="paypal-button" class="btn btn-paypal">
+                                        <i class="fab fa-paypal"></i> Continue with PayPal
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <!-- UPI Form -->
+                            <div id="upi" class="tab-content">
+                                <form id="upiForm" class="payment-form">
+                                    <div class="form-group">
+                                        <label for="upi-id">UPI ID</label>
+                                        <div class="input-with-icon">
+                                            <i class="fas fa-mobile-alt"></i>
+                                            <input type="text" id="upi-id" placeholder="yourname@upi" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="upi-apps">
+                                        <p>Pay using:</p>
+                                        <div class="upi-app-icons">
+                                            <div class="upi-app">
+                                                <img src="assets/google.jpeg" alt="Google Pay">
+                                                <span>Google Pay</span>
+                                            </div>
+                                            <div class="upi-app">
+                                                <img src="assets/phone.jpeg" alt="PhonePe">
+                                                <span>PhonePe</span>
+                                            </div>
+                                            <div class="upi-app">
+                                                <img src="assets/paytm.png" alt="Paytm">
+                                                <span>Paytm</span>
+                                            </div>
+                                            <div class="upi-app">
+                                                <img src="assets/bhim.png" alt="BHIM">
+                                                <span>BHIM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-pay-now">Pay via UPI</button>
+                                </form>
+                            </div>
+                            
+                            <!-- Net Banking Form -->
+                            <div id="netbanking" class="tab-content">
+                                <form id="netbankingForm" class="payment-form">
+                                    <div class="form-group">
+                                        <label for="bank-select">Select Bank</label>
+                                        <select id="bank-select" required>
+                                            <option value="">Select your bank</option>
+                                            <option value="sbi">State Bank of India</option>
+                                            <option value="hdfc">HDFC Bank</option>
+                                            <option value="icici">ICICI Bank</option>
+                                            <option value="axis">Axis Bank</option>
+                                            <option value="kotak">Kotak Mahindra Bank</option>
+                                            <option value="pnb">Punjab National Bank</option>
+                                            <option value="bob">Bank of Baroda</option>
+                                            <option value="other">Other Bank</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <p>You will be redirected to your bank's secure payment gateway to complete the transaction.</p>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-pay-now">Proceed to Bank</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div class="order-details">
+                        <div class="order-items" id="orderItems">
+                            <!-- Order items will be dynamically inserted here -->
+                        </div>
+                        
+                        <div class="order-totals">
+                            <div class="summary-row">
+                                <span>Subtotal</span>
+                                <span id="order-subtotal">₹0.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Shipping</span>
+                                <span id="order-shipping">₹0.00</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Tax</span>
+                                <span id="order-tax">₹0.00</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total</span>
+                                <span id="order-total">₹0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="delivery-info">
+                        <h3>Delivery Information</h3>
+                        <div class="delivery-address" id="deliveryAddress">
+                            <!-- Address will be dynamically inserted here -->
+                        </div>
+                        <a href="#" class="change-address">Change Address</a>
+                    </div>
+                    
+                    <div class="secure-checkout">
+                        <i class="fas fa-lock"></i>
+                        <span>Secure SSL Encrypted Payment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Modal -->
+    <div class="payment-modal" id="paymentModal">
+        <div class="modal-content">
+            <div class="modal-success" id="successModal">
+                <div class="modal-icon success">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Payment Successful!</h2>
+                <p>Your order has been placed successfully.</p>
+                <p class="order-id">Order ID: <span id="orderId">PRIME-123456</span></p>
+                <div class="modal-buttons">
+                    <button id="trackOrderBtn" class="btn btn-primary">Track Your Order</button>
+                    <button id="continueShoppingBtn" class="btn btn-secondary">Continue Shopping</button>
+                </div>
+            </div>
+            
+            <div class="modal-error" id="errorModal">
+                <div class="modal-icon error">
+                    <i class="fas fa-times-circle"></i>
+                </div>
+                <h2>Payment Failed</h2>
+                <p id="errorMessage">There was an issue processing your payment. Please try again.</p>
+                <div class="modal-buttons">
+                    <button id="tryAgainBtn" class="btn btn-primary">Try Again</button>
+                    <button id="changeMethodBtn" class="btn btn-secondary">Change Payment Method</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/payment.js"></script>
+</body>
+</html>

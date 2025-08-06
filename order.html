@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - PrimeShop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="assets/prime.png" alt="PrimeShop Logo" class="main-logo">
+                <div class="user-actions">
+                    <div class="user-logo" id="userLogo">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Orders Banner -->
+    <section class="orders-banner">
+        <div class="container">
+            <h1>My Orders</h1>
+            <p>View and manage all your orders in one place</p>
+        </div>
+    </section>
+
+    <!-- Orders Section -->
+    <section class="orders-section">
+        <div class="container">
+            <div class="orders-filter">
+                <div class="filter-options">
+                    <button class="filter-btn active" data-filter="all">All Orders</button>
+                    <button class="filter-btn" data-filter="processing">Processing</button>
+                    <button class="filter-btn" data-filter="shipped">Shipped</button>
+                    <button class="filter-btn" data-filter="delivered">Delivered</button>
+                    <button class="filter-btn" data-filter="cancelled">Cancelled</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="orderSearch" placeholder="Search by Order ID...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="orders-list" id="ordersList">
+                <!-- Orders will be dynamically inserted here -->
+                <div class="no-orders">
+                    <i class="fas fa-box-open"></i>
+                    <h3>No Orders Found</h3>
+                    <p>You haven't placed any orders yet.</p>
+                    <a href="products.html" class="btn btn-primary">Start Shopping</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/orders.js"></script>
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeShop - Smartphones</title>
+    <link rel="stylesheet" href="css/phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html"><img src="assets/prime.png" alt="PrimeShop Logo" class="main-logo"></a>
+                <div class="user-actions">
+                    <div class="user-logo" id="userLogo">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Banner -->
+    <section class="product-banner">
+        <div class="container">
+            <h1>Smartphones</h1>
+            <p>Discover the latest mobile technology</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <img src="assets/14.jpeg" alt="iPhone 14">
+                    <div class="product-info">
+                        <h3>iPhone 14 Pro</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(124)</span>
+                        </div>
+                        <p class="product-price">$999.00 <span class="old-price">$1,099.00</span></p>
+                        <button class="btn btn-primary add-to-cart" data-id="1">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="assets/galaxy.jpeg" alt="Samsung Galaxy S23">
+                    <div class="product-info">
+                        <h3>Samsung Galaxy S23</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(98)</span>
+                        </div>
+                        <p class="product-price">$799.99</p>
+                        <button class="btn btn-primary add-to-cart" data-id="2">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-badge">Sale</div>
+                    <img src="assets/pixel.jpeg" alt="Google Pixel 7">
+                    <div class="product-info">
+                        <h3>Google Pixel 7 Pro</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(156)</span>
+                        </div>
+                        <p class="product-price">$899.00 <span class="old-price">$999.00</span></p>
+                        <button class="btn btn-primary add-to-cart" data-id="3">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="assets/11.jpeg" alt="OnePlus 11">
+                    <div class="product-info">
+                        <h3>OnePlus 11 5G</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(87)</span>
+                        </div>
+                        <p class="product-price">$699.00</p>
+                        <button class="btn btn-primary add-to-cart" data-id="4">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <img src="assets/13.jpeg" alt="Xiaomi 13 Pro">
+                    <div class="product-info">
+                        <h3>Xiaomi 13 Pro</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(64)</span>
+                        </div>
+                        <p class="product-price">$899.99</p>
+                        <button class="btn btn-primary add-to-cart" data-id="5">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-badge">Best Seller</div>
+                    <img src="assets/fold4.jpeg" alt="Samsung Galaxy Z Fold 4">
+                    <div class="product-info">
+                        <h3>Samsung Galaxy Z Fold 4</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(112)</span>
+                        </div>
+                        <p class="product-price">$1,799.99</p>
+                        <button class="btn btn-primary add-to-cart" data-id="6">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <img src="assets/se.jpeg" alt="iPhone SE">
+                    <div class="product-info">
+                        <h3>iPhone SE (2022)</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <span>(76)</span>
+                        </div>
+                        <p class="product-price">$429.00</p>
+                        <button class="btn btn-primary add-to-cart" data-id="7">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <img src="assets/rog6.jpeg" alt="Asus ROG Phone 6">
+                    <div class="product-info">
+                        <h3>Asus ROG Phone 6</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(53)</span>
+                        </div>
+                        <p class="product-price">$999.00</p>
+                        <button class="btn btn-primary add-to-cart" data-id="8">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 9 -->
+                <div class="product-card">
+                    <div class="product-badge">Sale</div>
+                    <img src="assets/find5.jpeg" alt="Oppo Find X5 Pro">
+                    <div class="product-info">
+                        <h3>Oppo Find X5 Pro</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(68)</span>
+                        </div>
+                        <p class="product-price">$1,099.00 <span class="old-price">$1,299.00</span></p>
+                        <button class="btn btn-primary add-to-cart" data-id="9">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 10 -->
+                <div class="product-card">
+                    <img src="assets/1.jpeg" alt="Nothing Phone 1">
+                    <div class="product-info">
+                        <h3>Nothing Phone (1)</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <span>(89)</span>
+                        </div>
+                        <p class="product-price">$469.00</p>
+                        <button class="btn btn-primary add-to-cart" data-id="10">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 11 -->
+                <div class="product-card">
+                    <img src="assets/gt3.jpeg" alt="Realme GT Neo 3">
+                    <div class="product-info">
+                        <h3>Realme GT Neo 3</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(42)</span>
+                        </div>
+                        <p class="product-price">$399.00</p>
+                        <button class="btn btn-primary add-to-cart" data-id="11">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 12 -->
+                <div class="product-card">
+                    <div class="product-badge">New</div>
+                    <img src="assets/x90.jpeg" alt="Vivo X90 Pro">
+                    <div class="product-info">
+                        <h3>Vivo X90 Pro+</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(37)</span>
+                        </div>
+                        <p class="product-price">$1,199.00</p>
+                        <button class="btn btn-primary add-to-cart" data-id="12">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest updates on new products and upcoming sales</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>PrimeShop</h3>
+                    <p>Your one-stop shop for all your needs. Quality products at affordable prices.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, Country</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@primeshop.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 PrimeShop. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Required Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login Required</h2>
+            <p>You need to be logged in to perform this action.</p>
+            <a href="ulogin.html" class="btn btn-primary">Go to Login Page</a>
+        </div>
+    </div>
+
+    <script src="js/phone.js"></script>
+</body>
+</html>

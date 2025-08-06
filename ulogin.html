@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup Form</title>
+    <link rel="stylesheet" href="css/ulogin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <!-- Custom Alert Messages -->
+        <div id="alertBox" class="alert-box hidden">
+            <span id="alertMessage"></span>
+            <button id="closeAlert" class="close-alert">&times;</button>
+        </div>
+
+        <!-- Login Form -->
+        <div class="form-box login">
+            <form id="loginForm">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <i class='bx bxs-user input-icon'></i>
+                    <input type="text" id="loginUsername" placeholder="Username" required>
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock-alt input-icon'></i>
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                    <i class='bx bx-hide toggle-password'></i>
+                </div>
+                <div class="forgot-link">
+                    <a href="#" id="forgotPasswordLink">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="form-box register">
+            <form id="registerForm">
+                <h1>Registration</h1>
+                <div class="input-box">
+                    <i class='bx bxs-id-card input-icon'></i>
+                    <input type="text" id="regUserId" placeholder="User ID will be generated" readonly>
+                    <i class='bx bx-copy copy-user-id' title="Copy to clipboard"></i>
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-user input-icon'></i>
+                    <input type="text" id="regUsername" placeholder="Username" required>
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-envelope input-icon'></i>
+                    <input type="email" id="regEmail" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock-alt input-icon'></i>
+                    <input type="password" id="regPassword" placeholder="Password" required>
+                    <i class='bx bx-hide toggle-password'></i>
+                </div>
+
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+
+        <!-- Forgot Password Form (hidden by default) -->
+        <div class="form-box forgot-password" style="display: none;">
+            <form id="forgotPasswordForm">
+                <h1>Reset Password</h1>
+                <div class="input-box">
+                    <i class='bx bxs-user input-icon'></i>
+                    <input type="text" id="forgotUsername" placeholder="Username" required>
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-id-card input-icon'></i>
+                    <input type="text" id="forgotUserId" placeholder="Your User ID" required>
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock-alt input-icon'></i>
+                    <input type="password" id="newPassword" placeholder="New Password" required>
+                    <i class='bx bx-hide toggle-password'></i>
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock-alt input-icon'></i>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    <i class='bx bx-hide toggle-password'></i>
+                </div>
+                <button type="submit" class="btn">Reset Password</button>
+                <button type="button" id="backToLogin" class="btn" style="background: #a8a8a8; margin-top: 10px;">Back to Login</button>
+            </form>
+        </div>
+
+        <!-- Toggle Panels -->
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>Hello, Welcome!</h1>
+                <p>Don't have an account?</p>
+                <button class="btn register-btn">Register</button>
+            </div>
+
+            <div class="toggle-panel toggle-right">
+                <h1>Welcome Back!</h1>
+                <p>Already have an account?</p>
+                <button class="btn login-btn">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/ulogin.js"></script>
+</body>
+</html>
