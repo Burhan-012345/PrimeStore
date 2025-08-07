@@ -37,7 +37,7 @@ function initializeOrders() {
                         name: 'Wireless Bluetooth Headphones',
                         price: 1999,
                         quantity: 1,
-                        image: 'https://via.placeholder.com/100?text=Headphones'
+                        image: './assets/headphone.jpeg'
                     }
                 ],
                 subtotal: 1999,
@@ -64,14 +64,14 @@ function initializeOrders() {
                         name: 'Smart Watch Pro',
                         price: 3499,
                         quantity: 1,
-                        image: 'https://via.placeholder.com/100?text=Smart+Watch'
+                        image: './assets/watch.jpeg'
                     },
                     {
                         id: 'prod-003',
                         name: 'Phone Case',
                         price: 299,
                         quantity: 2,
-                        image: 'https://via.placeholder.com/100?text=Phone+Case'
+                        image: './assets/case.jpeg'
                     }
                 ],
                 subtotal: 4097,
