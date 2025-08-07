@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     status: 'completed',
                     total: 2499.00,
                     products: [
-                        { id: '2', name: 'Wireless Headphones', price: 1499.00, quantity: 1, image: 'assets/headphone.png' },
+                        { id: '2', name: 'Wireless Headphones', price: 1499.00, quantity: 1, image: './assets/headphone.jpeg' },
                         { id: '5', name: 'Phone Case', price: 500.00, quantity: 2, image: 'assets/case.png' }
                     ]
                 },
@@ -237,15 +237,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     status: 'processing',
                     total: 20000.00,
                     products: [
-                        { id: '1', name: 'Premium Smartphone', price: 20000.00, quantity: 1, image: 'assets/phone.png' }
+                        { id: '1', name: 'Premium Smartphone', price: 20000.00, quantity: 1, image: './assets/galaxy.jpeg' }
                     ]
                 }
             ];
             
             defaultUser.wishlist = [
                 { id: '3', name: 'Smart Watch', price: 5000.00, image: 'assets/watch.png' },
-                { id: '4', name: 'Ultra Slim Laptop', price: 70000.00, image: 'assets/laptop.png' },
-                { id: '6', name: 'Bluetooth Speaker', price: 2500.00, image: 'assets/speaker.png' }
+                { id: '4', name: 'Ultra Slim Laptop', price: 70000.00, image: './assets/laptop.jpeg' },
+                { id: '6', name: 'Bluetooth Speaker', price: 2500.00, image: './assets/speaker.jpeg' }
             ];
             
             localStorage.setItem('userData', JSON.stringify(defaultUser));
