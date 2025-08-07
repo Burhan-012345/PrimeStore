@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 1,
             name: "Premium Smartphone",
             price: 1800,
-            image: "assets/galaxy.jpeg",
+            image: "./assets/galaxy.jpeg",
             category: "electronics",
             rating: 4.5,
             reviews: 128
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 2,
             name: "Wireless Headphones",
             price: 17.5,
-            image: "assets/headphone.jpeg",
+            image: "./assets/headphone.jpeg",
             category: "electronics",
             rating: 4,
             reviews: 87
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 3,
             name: "Smart Watch",
             price: 60.00,
-            image: "assets/watch.jpeg",
+            image: "./assets/watch.jpeg",
             category: "electronics",
             rating: 5,
             reviews: 215
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 4,
             name: "Ultra Slim Laptop",
             price: 1000.00,
-            image: "assets/laptop.jpeg",
+            image: "./assets/laptop.jpeg",
             category: "electronics",
             rating: 4.5,
             reviews: 156
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 5,
             name: "Men's Casual Shirt",
             price: 6.00,
-            image: "assets/shirt.jpeg",
+            image: "./assets/shirt.jpeg",
             category: "fashion",
             rating: 4,
             reviews: 72
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 6,
             name: "Women's Summer Dress",
             price: 7.00,
-            image: "assets/dress.jpeg",
+            image: "./assets/dress.jpeg",
             category: "fashion",
             rating: 4.5,
             reviews: 143
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 7,
             name: "Modern Coffee Table",
             price: 125.00,
-            image: "assets/ctable.jpeg",
+            image: "./assets/ctable.jpeg",
             category: "home",
             rating: 4,
             reviews: 68
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
             id: 8,
             name: "Indoor Plant Set",
             price: 60.00,
-            image: "assets/plant.jpeg",
+            image: "./assets/plant.jpeg",
             category: "home",
             rating: 4.5,
             reviews: 91
