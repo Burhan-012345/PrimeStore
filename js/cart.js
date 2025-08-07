@@ -257,28 +257,28 @@ function loadRecentlyViewed() {
             id: '5',
             name: 'Bluetooth Speaker',
             price: 1999,
-            image: 'assets/speaker.jpeg',
+            image: './assets/speaker.jpeg',
             rating: 4
         },
         {
             id: '6',
             name: 'Fitness Tracker',
             price: 2499,
-            image: 'assets/tracker.jpeg',
+            image: './assets/tracker.jpeg',
             rating: 4.5
         },
         {
             id: '7',
             name: 'Wireless Earbuds',
             price: 2999,
-            image: 'assets/earbuds.jpeg',
+            image: './assets/earbuds.jpeg',
             rating: 4
         },
         {
             id: '8',
             name: 'Power Bank',
             price: 999,
-            image: 'assets/powerbank.jpeg',
+            image: './assets/powerbank.jpeg',
             rating: 3.5
         }
     ];
